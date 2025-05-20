@@ -1,11 +1,7 @@
-import { useState } from 'react'
 import StockBackground from '/stock-background.jpg'
 import StockMenu from '/stock-menu.webp'
 
 function Menu() {
-  const [activeTab, setActiveTab] = useState('home')
-  activeTab;
-  setActiveTab;
 
   return (
     <>

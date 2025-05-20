@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import StockBackground from '/stock-background.jpg'
 
-function About() {
+function Contact() {
+  const [activeTab, setActiveTab] = useState('home')
+  activeTab;
+  setActiveTab;
 
   return (
     <>
@@ -190,4 +194,4 @@ function About() {
   )
 }
 
-export default About
+export default Contact
