@@ -3,6 +3,7 @@ import Home from './Home/Home'
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Menu from './Menu/Menu';
+import About from './About/About';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Home')
@@ -28,6 +29,7 @@ function App() {
           {/* tabs */}
           {activeTab === 'Home' ? <Home/> : ''}
           {activeTab === 'Menu' ? <Menu/> : ''}
+          {activeTab === 'About' ? <About/> : ''}
 
           
           <Footer/>

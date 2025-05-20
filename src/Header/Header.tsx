@@ -33,7 +33,7 @@ function Header({setActiveTab}: headerProps) {
           rounded-md
           p-2.5
         '>Menu</button>
-        <button type='button' className='
+        <button type='button' onClick={() => setActiveTab('About')} className='
           inline-flex
           items-center
           justify-center
