@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Home from './Home/Home'
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home')
@@ -25,6 +26,9 @@ function App() {
 
           {/* tabs */}
           {activeTab === 'home' ? <Home/> : ''}
+
+          
+          <Footer/>
         </div>
       </div>
     </>
