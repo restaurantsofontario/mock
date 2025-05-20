@@ -160,7 +160,7 @@ function About() {
             '>
               Location
             </h3>
-            <a href="https://maps.app.goo.gl/WuLe5M5fBTLkf4fk8">
+            <a target="_blank" href="https://maps.app.goo.gl/WuLe5M5fBTLkf4fk8">
               <img 
                 src={StockBackground}
                 className='

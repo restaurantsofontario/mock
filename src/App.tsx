@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Menu from './Menu/Menu';
 import About from './About/About';
+import Contact from './Contact/Contact';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Home')
@@ -30,9 +31,10 @@ function App() {
           {activeTab === 'Home' ? <Home/> : ''}
           {activeTab === 'Menu' ? <Menu/> : ''}
           {activeTab === 'About' ? <About/> : ''}
+          {activeTab === 'Contact' ? <Contact/> : ''}
 
           
-          <Footer/>
+          <Footer setActiveTab={setActiveTab}/>
         </div>
       </div>
     </>

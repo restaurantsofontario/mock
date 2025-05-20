@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import StockBackground from '/stock-background.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
-  const [activeTab, setActiveTab] = useState('home')
-  activeTab;
-  setActiveTab;
 
   return (
     <>
@@ -14,8 +13,7 @@ function Contact() {
         flex-col
         justify-center
         items-center
-        min-h-[300px]
-        lg:min-h-[500px]
+        min-h-[200px]
 
       '>
         <h1 className='
@@ -26,168 +24,88 @@ function Contact() {
           text-gray-900
           sm:text-7xl
         '>
-          Our Story
+          Contact Us
         </h1>
-        <p className='
-          mt-8
-          text-lg
-          font-medium
-          text-pretty
-          text-gray-500
-          sm:text-xl/8
-          font-mono
-        '>
-          AUTHENTIC CUISINE FOOD SINCE 2022
-        </p>
       </div>
       {/* Content */}
       <div className='
         flex
         flex-col
         flex-grow
-        gap-4
+        gap-16
         bg-white/70
         lg:rounded-t-3xl
         p-8
-        lg:p-16
+        md:p-16
       '>
+        {/* Contact Details */}
         <div className='
           flex
+          md:flex-row
           flex-col
-          gap-32
-          py-8
-          items-center
+          gap-4
           w-full
-          mb-8
+          justify-center
+          md:gap-24
+          gap-16
+          text-2xl
+          text-gray-800
         '>
           <div className='
             flex
-            flex-col
-            md:flex-row
+            flex-row
+            justify-center
             gap-4
           '>
-            <div className='
-              flex
-              flex-col
-              flex-grow
-              md:w-1/4
-              gap-4
-            '>
-              <h3 className='
-                text-3xl
-                font-semibold
-                text-gray-800
-                text-center
-              '>
-                Authentic Food in your Neighbourhood
-              </h3>
-              <p className='
-                text-center
-                text-gray-600
-                text-lg
-                leading-relaxed
-                flex-grow
-              '>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
+            <FontAwesomeIcon icon={faPhone} /><a href="tel:+1234567890" className='underline hover:text-blue-500'>+1 (234) 567-890</a>
+          </div>
+          <div className='
+            flex
+            flex-row
+            justify-center
+            gap-4
+          '>
+            <FontAwesomeIcon icon={faEnvelope} /><a href="mailto:example@example.com" className='underline hover:text-blue-500'>example@example.com</a>
+          </div>
+        </div>
+        {/* Location */}
+        <div className='
+          flex
+          flex-col
+          gap-4
+          w-full
+        '>
+          <h3 className='
+            text-3xl
+            font-semibold
+            text-gray-800
+            text-center
+          '>
+            Location
+          </h3>
+          <a target="_blank" href="https://maps.app.goo.gl/WuLe5M5fBTLkf4fk8">
             <img 
-              src={StockBackground} 
+              src={StockBackground}
               className='
                 object-cover
                 rounded-lg
                 shadow-2xl
-                md:w-1/4
                 flex-grow
+                h-40
+                md:h-80
+                w-full
               '
             />
-          </div>
-
-          <div className='
-            flex
-            flex-col-reverse
-            md:flex-row
-            gap-4
+          </a>
+          <p className='
+            text-center
+            text-gray-600
+            text-lg
+            leading-relaxed
+            flex-grow
           '>
-            <img 
-              src={StockBackground} 
-              className='
-                object-cover
-                rounded-lg
-                shadow-2xl
-                md:w-1/4
-                flex-grow
-              '
-            />
-            <div className='
-              flex
-              flex-col
-              flex-grow
-              md:w-1/4
-              gap-4
-            '>
-              <h3 className='
-                text-3xl
-                font-semibold
-                text-gray-800
-                text-center
-              '>
-                Never less than Fresh off the Grill
-              </h3>
-              <p className='
-                text-center
-                text-gray-600
-                text-lg
-                leading-relaxed
-                flex-grow
-              '>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-
-          <div className='
-            flex
-            flex-col
-            gap-4
-            w-full
-          '>
-            <h3 className='
-              text-3xl
-              font-semibold
-              text-gray-800
-              text-center
-            '>
-              Location
-            </h3>
-            <a href="https://maps.app.goo.gl/WuLe5M5fBTLkf4fk8">
-              <img 
-                src={StockBackground}
-                className='
-                  object-cover
-                  rounded-lg
-                  shadow-2xl
-                  flex-grow
-                  h-40
-                  md:h-80
-                  w-full
-                '
-              />
-            </a>
-            <p className='
-              text-center
-              text-gray-600
-              text-lg
-              leading-relaxed
-              flex-grow
-            '>
-              Address
-            </p>
-          </div>
+            Address
+          </p>
         </div>
       </div>
     </>

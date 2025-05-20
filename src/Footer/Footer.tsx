@@ -1,4 +1,6 @@
-function Footer() {
+type headerProps = { setActiveTab : (tab : any) => void }
+
+function Footer({setActiveTab}: headerProps) {
 
   return (
     <>
@@ -15,7 +17,7 @@ function Footer() {
         text-cyan-500
         bg-white/80
       '>
-        <button type='button' className='
+        <button type='button' onClick={() => {setActiveTab('Contact')}} className='
           inline-flex
           items-center
           justify-center
@@ -23,13 +25,13 @@ function Footer() {
           p-2.5
           mr-auto
         '>Contact Us</button>
-        <button type='button' className='
+        <a type='button' target="_blank" href="https://awlanstranger.github.io/personal-website/" className='
           inline-flex
           items-center
           justify-center
           rounded-md
           p-2.5
-        '>Like this site?</button>
+        '>Like this site?</a>
       </div>
     </>
   )
