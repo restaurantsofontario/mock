@@ -143,12 +143,13 @@ function Menu() {
           flex
           flex-col
           items-center
+          gap-8
         '>
           <h2 className='
-            text-2xl
+            text-4xl
             font-semibold
             text-gray-800
-            mb-4
+            text-nowrap
           '>
             Full Menu
           </h2>
