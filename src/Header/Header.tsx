@@ -1,4 +1,6 @@
-function Header() {
+type headerProps = { setActiveTab : (tab : any) => void }
+
+function Header({setActiveTab}: headerProps) {
 
   return (
     <>
@@ -16,7 +18,7 @@ function Header() {
         bg-white/80
         lg:rounded-b-3xl
       '>
-        <button type='button' className='
+        <button type='button' onClick={() => setActiveTab('Home')} className='
           inline-flex
           items-center
           justify-center
@@ -24,7 +26,7 @@ function Header() {
           p-2.5
           mr-auto
         '>Logo</button>
-        <button type='button' className='
+        <button type='button' onClick={() => setActiveTab('Menu')} className='
           inline-flex
           items-center
           justify-center

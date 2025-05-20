@@ -83,21 +83,20 @@ function Home() {
           '>
             <img 
               src={StockBackground} 
-              alt="Delicious food" 
               className='
+                object-cover
                 w-1/4
                 flex-grow
                 rounded-lg
                 shadow-2xl
-                ml-2
                 -mr-4
                 -mb-4
               '
             />
             <img 
               src={StockBackground} 
-              alt="Restaurant ambiance" 
               className='
+                object-cover
                 w-1/4
                 flex-grow
                 rounded-lg
